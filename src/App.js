@@ -15,6 +15,7 @@ import {connect} from 'react-redux';
 import {setCurrentUser} from './redux/user/user.actions';
 import CheckoutPage from './pages/checkout/checkout.component';
 
+
 class App extends React.Component {
   // constructor() {
   //   super();
@@ -77,7 +78,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector ({
-currentUser: selectCurrentUser
+currentUser: selectCurrentUser,
 });
 
 const mapDispatchToProps = dispatch => ({
